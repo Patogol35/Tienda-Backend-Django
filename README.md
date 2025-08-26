@@ -10,7 +10,7 @@ Backend de una tienda online desarrollado con Django + Django REST Framework + M
 
 ---
 
-⚙️ Requisitos previos
+⚙️ Tecnologías utilizadas 
 
 Python 3.11+
 
@@ -20,29 +20,27 @@ pip y virtualenv
 
 ---
 
-🚀 Instalación y configuración
+📦 Instalación y configuración
 
-1. Clonar repositorio
+1. Clona el repositorio
 
 git clone https://github.com/tuusuario/tienda-backend.git
 
-2. Ingresar a la carpeta del proyecto
+2. Ingresa a la carpeta del proyecto
    
 cd tienda-backend
 
 
-3. Crear entorno virtual
+3. Crea el entorno virtual
 
 python -m venv venv
 
-Linux/Mac
-source venv/bin/activate
+Linux/Mac: source venv/bin/activate
 
-Windows
-venv\Scripts\activate
+Windows: venv\Scripts\activate
 
 
-4. Instalar dependencias
+4. Instala las dependencias
 
 pip install -r requirements.txt
 
@@ -55,7 +53,7 @@ o
 pip install PyMySQL
 
 
-5. Crear base de datos en MySQL
+5. Crea la base de datos en MySQL
 
 CREATE DATABASE tienda_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -73,25 +71,25 @@ DATABASES = {
 }
 
 
-6. Aplicar migraciones
+6. Aplica las migraciones
 
 python manage.py makemigrations
 python manage.py migrate
 
 
-7. Crear superusuario
+7. Crea el superusuario
 
 python manage.py createsuperuser
 
 
-8. Correr servidor
+8. Ejecuta el servidor
 
 python manage.py runserver
 
 
 ---
 
-🔑 Endpoints principales
+🔗 Endpoints principales
 
 Autenticación (JWT)
 
@@ -195,7 +193,7 @@ Podrás gestionar productos, carritos, pedidos y usuarios.
 
 ---
 
-✅ Próximos pasos / Mejoras
+Próximos pasos / Mejoras
 
 [ ] Documentación de la API con Swagger o ReDoc
 
