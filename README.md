@@ -211,5 +211,6 @@ Podrás gestionar productos, carritos, pedidos y usuarios.
 
 👨‍💻 Autor
 
-Proyecto creado por Jorge Patricio ✨
+Jorge Patricio Santamaría Cherrez
+Máster en Ingeniería de Software y Sistemas Informáticos
 
