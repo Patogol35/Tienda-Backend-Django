@@ -1,68 +1,90 @@
+
 🛒 Tienda Backend
 
-Proyecto de **tienda online** desarrollado con **Django + Django REST Framework + MySQL**, que incluye gestión de productos, carritos de compra, pedidos y autenticación con **JWT**.
+Backend de una tienda online desarrollado con Django + Django REST Framework + MySQL, que incluye:
+✅ Gestión de productos
+✅ Carrito de compras
+✅ Pedidos
+✅ Autenticación con JWT
+
 
 ---
 
-## 🚀 Tecnologías usadas
-- [Django 5.2](https://www.djangoproject.com/)
-- [Django REST Framework](https://www.django-rest-framework.org/)
-- [JWT (SimpleJWT)](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
-- [MySQL](https://www.mysql.com/)
-- [django-filter](https://django-filter.readthedocs.io/en/stable/)
-- [django-cors-headers](https://pypi.org/project/django-cors-headers/)
-- [Pillow](https://pillow.readthedocs.io/)
+⚙️ Requisitos previos
+
+Python 3.11+
+
+MySQL 8+ instalado y corriendo
+
+pip y virtualenv
 
 ---
 
-⚙️ Instalación y configuración
+🚀 Instalación y configuración
 
 1. Clonar repositorio
 
 git clone https://github.com/tuusuario/tienda-backend.git
+
+2. Ingresar a la carpeta del proyecto
+   
 cd tienda-backend
 
-2. Crear entorno virtual
+
+3. Crear entorno virtual
 
 python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
 
-3. Instalar dependencias
+# Linux/Mac
+source venv/bin/activate
 
-pip install mysql
+# Windows
+venv\Scripts\activate
+
+
+4. Instalar dependencias
 
 pip install -r requirements.txt
 
-4. Configurar base de datos
+⚠️ Si mysqlclient da problemas, instálalo manualmente según tu sistema:
 
-Crea la base en MySQL:
+pip install mysqlclient
+
+o
+
+pip install PyMySQL
+
+
+5. Crear base de datos en MySQL
 
 CREATE DATABASE tienda_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-En settings.py asegúrate de configurar:
+En settings.py verifica:
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'tienda_db',
         'USER': 'root',
-        'PASSWORD': 'tu clave',
+        'PASSWORD': 'tu_clave',
         'HOST': 'localhost',
         'PORT': '3306',
     }
 }
 
-5. Migraciones
+
+6. Aplicar migraciones
 
 python manage.py makemigrations
 python manage.py migrate
 
-6. Crear superusuario
+
+7. Crear superusuario
 
 python manage.py createsuperuser
 
-7. Correr el servidor
+
+8. Correr servidor
 
 python manage.py runserver
 
@@ -80,6 +102,18 @@ POST /api/token/ → Obtener token de acceso
 POST /api/token/refresh/ → Refrescar token
 
 
+Ejemplo:
+
+POST /api/register/
+{
+  "username": "juan",
+  "email": "juan@mail.com",
+  "password": "123456"
+}
+
+
+---
+
 Productos
 
 GET /api/productos/ → Listar productos
@@ -91,12 +125,38 @@ PUT /api/productos/{id}/ → Editar producto
 DELETE /api/productos/{id}/ → Eliminar producto
 
 
+Ejemplo respuesta:
+
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta",
+    "descripcion": "Camiseta de algodón",
+    "precio": "19.99",
+    "stock": 10
+  }
+]
+
+
+---
+
 Carrito
 
 GET /api/carrito/ → Ver carrito del usuario
 
 POST /api/carrito/agregar/ → Agregar producto al carrito
 
+
+Ejemplo:
+
+POST /api/carrito/agregar/
+{
+  "producto_id": 1,
+  "cantidad": 2
+}
+
+
+---
 
 Pedidos
 
@@ -105,29 +165,45 @@ POST /api/pedido/crear/ → Crear pedido desde carrito
 GET /api/pedidos/ → Listar pedidos del usuario
 
 
+Ejemplo respuesta:
+
+{
+  "id": 3,
+  "usuario": 1,
+  "fecha": "2025-08-26T10:00:00Z",
+  "total": "39.98",
+  "items": [
+    {
+      "producto": { "id": 1, "nombre": "Camiseta" },
+      "cantidad": 2,
+      "precio_unitario": "19.99",
+      "subtotal": "39.98"
+    }
+  ]
+}
+
 
 ---
 
 📸 Panel de administración
 
 Accede a:
+👉 http://127.0.0.1:8000/admin/
 
-http://127.0.0.1:8000/admin/
-
-Aquí puedes gestionar productos, carritos, pedidos y usuarios.
+Podrás gestionar productos, carritos, pedidos y usuarios.
 
 
 ---
 
 ✅ Próximos pasos / Mejoras
 
-[ ] Documentación de la API con Swagger o ReDoc.
+[ ] Documentación de la API con Swagger o ReDoc
 
-[ ] Tests automatizados.
+[ ] Tests automatizados
 
-[ ] Integración con un frontend en React/Angular.
+[ ] Integración con un frontend en React/Angular
 
-[ ] Manejo de pagos y envíos.
+[ ] Manejo de pagos y envíos
 
 
 
@@ -136,3 +212,4 @@ Aquí puedes gestionar productos, carritos, pedidos y usuarios.
 👨‍💻 Autor
 
 Proyecto creado por Jorge Patricio ✨
+
