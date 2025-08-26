@@ -74,6 +74,7 @@ DATABASES = {
 6. Aplica las migraciones
 
 python manage.py makemigrations
+
 python manage.py migrate
 
 
