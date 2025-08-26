@@ -24,11 +24,12 @@ pip y virtualenv
 
 1. Clona el repositorio
 
-git clone https://github.com/tuusuario/tienda-backend.git
+https://github.com/Patogol35/Aplicacion-PatricioSantamaria--Django-Python-
+
 
 2. Ingresa a la carpeta del proyecto
    
-cd tienda-backend
+cd Aplicacion-PatricioSantamaria--Django-Python-
 
 
 3. Crea el entorno virtual
