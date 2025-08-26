@@ -2,10 +2,11 @@
 🛒 Tienda Backend
 
 Backend de una tienda online desarrollado con Django + Django REST Framework + MySQL, que incluye:
-✅ Gestión de productos
-✅ Carrito de compras
-✅ Pedidos
-✅ Autenticación con JWT
+
+- Gestión de productos
+- Carrito de compras
+- Pedidos
+- Autenticación con JWT
 
 
 ---
