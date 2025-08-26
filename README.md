@@ -24,7 +24,7 @@ Backend de una tienda online desarrollado con Django + Django REST Framework + M
 
 1. Clona el repositorio
 
-https://github.com/Patogol35/Tienda-Backend-Django
+git clone https://github.com/Patogol35/Tienda-Backend-Django
 
 
 2. Ingresa a la carpeta del proyecto
