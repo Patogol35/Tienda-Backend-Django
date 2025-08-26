@@ -1,4 +1,3 @@
-
 🛒 Tienda Backend
 
 Backend de una tienda online desarrollado con Django + Django REST Framework + MySQL, que incluye:
@@ -36,10 +35,10 @@ cd tienda-backend
 
 python -m venv venv
 
-# Linux/Mac
+Linux/Mac
 source venv/bin/activate
 
-# Windows
+Windows
 venv\Scripts\activate
 
 
