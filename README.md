@@ -12,11 +12,11 @@ Backend de una tienda online desarrollado con Django + Django REST Framework + M
 
 ⚙️ Tecnologías utilizadas 
 
-Python 3.11+
+- Python 3.11+
 
-MySQL 8+ instalado y corriendo
+- MySQL 8+ instalado y corriendo
 
-pip y virtualenv
+- pip y virtualenv
 
 ---
 
