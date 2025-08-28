@@ -2,9 +2,15 @@ from rest_framework import serializers
 from .models import Producto, Carrito, ItemCarrito, Pedido, ItemPedido
 from django.contrib.auth.models import User
 class ProductoSerializer(serializers.ModelSerializer):
+    imagen_url = serializers.SerializerMethodField()
     class Meta:
         model = Producto
-        fields = '__all__'
+        fields = '__all__'  # incluye todos los campos del modelo
+    def get_imagen_url(self, obj):
+        request = self.context.get('request')
+        if obj.imagen and request:
+            return request.build_absolute_uri(obj.imagen.url)
+        return None
 class ItemCarritoSerializer(serializers.ModelSerializer):
     producto = ProductoSerializer(read_only=True)
     class Meta:
@@ -40,4 +46,4 @@ class PedidoSerializer(serializers.ModelSerializer):
     total = serializers.DecimalField(max_digits=10, decimal_places=2, read_only=True)
     class Meta:
         model = Pedido
-        fields = ['id', 'usuario', 'fecha', 'total', 'items']  # Cambia 'creado' por 'fecha'
+        fields = ['id', 'usuario', 'fecha', 'total', 'items']
