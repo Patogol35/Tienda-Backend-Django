@@ -10,37 +10,37 @@ El frontend se encuentra disponible aquí:
 
 ✨ Características principales
 
-- Autenticación con JWT
+Autenticación con JWT
 
-Registro de usuarios.
+- Registro de usuarios.
 
-Inicio de sesión y generación de tokens de acceso/refresh con SimpleJWT.
-
-
-- Gestión de productos
-
-CRUD completo para administración de productos.
-
-Endpoints públicos para consultar catálogo.
+- Inicio de sesión y generación de tokens de acceso/refresh con SimpleJWT.
 
 
-- Carrito de compras
+Gestión de productos
 
-API para agregar, listar y eliminar productos del carrito.
+- CRUD completo para administración de productos.
 
-Carrito persistente asociado al usuario.
-
-
-- Gestión de pedidos
-
-Creación de pedidos a partir del carrito.
-
-Consultar historial de pedidos por usuario.
+- Endpoints públicos para consultar catálogo.
 
 
-- Integración con frontend en React + Vite
+Carrito de compras
 
-Soporte CORS para conexión directa con la aplicación cliente.
+- API para agregar, listar y eliminar productos del carrito.
+
+- Carrito persistente asociado al usuario.
+
+
+Gestión de pedidos
+
+- Creación de pedidos a partir del carrito.
+
+- Consultar historial de pedidos por usuario.
+
+
+Integración con frontend en React + Vite
+
+- Soporte CORS para conexión directa con la aplicación cliente.
 
 
 ---
