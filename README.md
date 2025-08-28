@@ -30,6 +30,8 @@ Carrito de compras
 
 - Carrito persistente asociado al usuario.
 
+- Control de Stock de productos.
+
 
 Gestión de pedidos
 
