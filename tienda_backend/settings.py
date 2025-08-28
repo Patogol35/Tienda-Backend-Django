@@ -137,3 +137,8 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True 
+
+# ✅ Configuración de archivos multimedia
+
+MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = '/media/'
