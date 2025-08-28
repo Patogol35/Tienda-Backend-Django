@@ -241,7 +241,6 @@ Próximos pasos / Mejoras
 
 [ ] Tests automatizados
 
-[ ] Integración con un frontend en React/Angular
 
 [ ] Manejo de pagos y envíos
 
@@ -252,5 +251,6 @@ Próximos pasos / Mejoras
 👨‍💻 Autor
 
 Jorge Patricio Santamaría Cherrez
+
 Máster en Ingeniería de Software y Sistemas Informáticos
 
