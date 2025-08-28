@@ -20,26 +20,26 @@ Inicio de sesión y generación de tokens de acceso/refresh con SimpleJWT.
 
 CRUD completo para administración de productos.
 
-- Endpoints públicos para consultar catálogo.
+Endpoints públicos para consultar catálogo.
 
 
-Carrito de compras
+- Carrito de compras
 
-- API para agregar, listar y eliminar productos del carrito.
+API para agregar, listar y eliminar productos del carrito.
 
-- Carrito persistente asociado al usuario.
-
-
-Gestión de pedidos
-
-- Creación de pedidos a partir del carrito.
-
-- Consultar historial de pedidos por usuario.
+Carrito persistente asociado al usuario.
 
 
-Integración con frontend en React + Vite
+- Gestión de pedidos
 
-- Soporte CORS para conexión directa con la aplicación cliente.
+Creación de pedidos a partir del carrito.
+
+Consultar historial de pedidos por usuario.
+
+
+- Integración con frontend en React + Vite
+
+Soporte CORS para conexión directa con la aplicación cliente.
 
 
 ---
