@@ -1,22 +1,60 @@
 🛒 Tienda Backend
 
-Backend de una tienda online desarrollado con Django + Django REST Framework + MySQL, que incluye:
+Aplicación desarrollada con Django + Django REST Framework que provee el backend de la tienda en línea.
+
+El frontend se encuentra disponible aquí:
+👉 https://github.com/Patogol35/Tienda-Frontend-React
+
+---
+
+Características principales
+
+- Autenticación con JWT
+
+Registro de usuarios.
+
+Inicio de sesión y generación de tokens de acceso/refresh con SimpleJWT.
+
 
 - Gestión de productos
-- Carrito de compras
-- Pedidos
-- Autenticación con JWT
+
+CRUD completo para administración de productos.
+
+- Endpoints públicos para consultar catálogo.
+
+
+Carrito de compras
+
+- API para agregar, listar y eliminar productos del carrito.
+
+- Carrito persistente asociado al usuario.
+
+
+Gestión de pedidos
+
+- Creación de pedidos a partir del carrito.
+
+- Consultar historial de pedidos por usuario.
+
+
+Integración con frontend en React + Vite
+
+- Soporte CORS para conexión directa con la aplicación cliente.
 
 
 ---
 
 ⚙️ Tecnologías utilizadas 
 
-- Python 3.11+
+- Django 4+
 
-- MySQL 8+ instalado y corriendo
+- Django REST Framework (DRF)
 
-- pip y virtualenv
+- Django REST Framework SimpleJWT (autenticación con tokens JWT).
+
+- MySQL (configurable también con SQLite en desarrollo).
+
+- django-cors-headers (para conexión con frontend).
 
 ---
 
