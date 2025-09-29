@@ -80,7 +80,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'tienda_db',
-        'USER': 'root',  # Cambia esto por tu usuario de MySQL
+        'USER': 'root',  
         'PASSWORD': 'patricio12',
         'HOST': 'localhost',
         'PORT': '3306',
