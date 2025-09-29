@@ -65,38 +65,76 @@ Integración con frontend en React + Vite
 
 1. Clona el repositorio
 
+```bash
+
 git clone https://github.com/Patogol35/Tienda-Backend-Django
 
+```
 
 2. Ingresa a la carpeta del proyecto
+
+```bash
    
 cd Tienda-Backend-Django
 
+```
+
 3. Crea el entorno virtual
+
+```bash
 
 python -m venv venv
 
-Linux/Mac: source venv/bin/activate
+```
 
-Windows: venv\Scripts\activate
+En Linux/Mac: 
 
+```bash
+
+source venv/bin/activate
+
+```
+
+En Windows: 
+
+```bash
+
+venv\Scripts\activate
+
+```
 
 4. Instala las dependencias
 
+```bash
+
 pip install -r requirements.txt
+
+```
 
 ⚠️ Si mysqlclient da problemas, instálalo manualmente según tu sistema:
 
+```bash
+
 pip install mysqlclient
 
-o
+```
+
+o 
+
+```bash
 
 pip install PyMySQL
+
+```
 
 
 5. Crea la base de datos en MySQL
 
+```bash
+
 CREATE DATABASE tienda_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+```
 
 En settings.py verifica:
 
@@ -114,20 +152,33 @@ DATABASES = {
 
 6. Aplica las migraciones
 
+```bash
+
 python manage.py makemigrations
+
+```
+
+```bash
 
 python manage.py migrate
 
+```
 
 7. Crea el superusuario
 
+```bash
+
 python manage.py createsuperuser
 
+```
 
-8. Ejecuta el servidor
+8. Ejecuta el servidor 
+
+```bash
 
 python manage.py runserver
 
+```
 
 ---
 
